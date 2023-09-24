@@ -1,0 +1,42 @@
+/* button element basic style */
+
+.button {
+    white-space: nowrap;
+    padding:1rem 2rem;
+    border-radius:5px;
+    text-align: center;
+    letter-spacing:0.025rem;
+    font-weight: 400;
+    transition: 0.2s all;
+}
+
+.button.cta {
+    background-color: #4F46E5;
+    color:#fff;
+}
+
+.button.cta:hover {
+    background-color: #4338CA;
+    color:#fff;
+}
+
+.button.secondary {
+    background-color: #fff;
+    color:#000;
+    border:1px solid #9FA5B1;
+}
+
+.button.secondary:hover {
+    background-color: #D0D4DB;
+}
+
+
+.button.alt {
+    color:#32b4bf;
+    border:1px solid #32b4bf;
+}
+
+.button.alt:hover {
+    color:#000;
+    background-color: #D0D4DB;
+}

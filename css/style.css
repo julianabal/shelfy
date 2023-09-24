@@ -1,0 +1,508 @@
+/* general reset/hack rules */
+
+html, body {
+    padding:0;
+    margin:0;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+}
+
+a { text-decoration:none; color:initial; font-weight: 500; }
+
+
+/* layout */
+.container {
+    display:flex;
+    width:100%;
+    max-width:1200px;
+}
+
+
+/* header */
+
+header {
+    padding:25px 30px;
+    position: sticky;
+    background-color: #fff;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1000;
+    border-bottom:1px solid #E7E7E7;
+}
+
+header nav {
+    display:flex;
+    justify-content:flex-start;
+    gap:20px;
+    align-items: center;
+    width:100%;
+}
+
+header nav .menu {
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    align-items: center;
+    padding:0;
+    width:100%;
+    font-size:0.8125rem;
+    display: none;
+}
+
+header nav .right {
+    display: flex;
+    justify-content: flex-end;
+    gap:20px;
+    align-items: center;
+    width:100%;
+}
+
+header nav .right .account {
+    display: flex;
+    gap:10px;
+    display:none;
+}
+
+
+/* main portion of the page */
+
+section {
+    padding-left:30px;
+    padding-right:30px;
+    justify-content: center;
+}
+
+
+/* Hero */
+
+section#hero {
+    padding-top:50px;
+}
+
+section#hero .container {
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+section#hero .text {
+    display:flex;
+    flex-direction: column;
+    gap:25px;
+}
+
+section#hero .text h1,
+section#hero .text p {
+    margin:0;
+    padding:0;
+}
+
+section#hero .text .bottom {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+section#hero .text .bottom .buttons {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+section#hero .text .bottom .buttons .button {
+    font-size:1rem;
+    width:100%;
+}
+
+section#hero .text .bottom p {
+    color:rgba(0,0,0,0.6);
+    font-size:0.875rem;
+    margin:0;
+    line-height: 140%;
+}
+
+section#hero .image {
+    position:relative;
+    overflow:hidden;
+    padding:0 30px;
+    max-height:280px;
+}
+
+section#hero .image img {
+    max-width:100%;
+    height:auto;
+}
+
+
+/* Features */
+
+section#features {
+    border-top:1px solid #E7E7E7;
+    border-bottom:1px solid #E7E7E7;
+    padding-top:60px;
+    padding-bottom:60px;
+}
+
+section#features .container {
+    display:flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+section#features .header {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+section#features #header .title {
+    font-size:2.25rem;
+    line-height:100%;
+    letter-spacing:-0.032rem;
+}
+
+section#features .list {
+    display: flex;
+    flex-direction: column;
+    gap:60px;
+}
+
+section#features .list .item {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+section#features .list .item p:first-of-type {
+    font-size:1rem;
+}
+
+section#features .list .item p:nth-of-type(2) {
+    font-size:0.875rem;
+    line-height: 140%;
+    color: #505050;
+}
+
+section#features .list .item img {
+    width:24px;
+    height:24px;
+}
+
+
+/* Testimonials */
+
+section#testimonials {
+    background-color:#2D2D2D;
+    padding-top:80px;
+    padding-bottom:80px;
+    color:#fff;
+}
+
+section#testimonials .container {
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+section#testimonials .slider {
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+section#testimonials .slider .slide {
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+section#testimonials .slider .slide .text {
+    line-height: 200%;
+    font-weight: 600;
+    text-decoration: underline;
+    padding-left:30px;
+    padding-right:30px;
+}
+
+section#testimonials .slider .slide .author {
+    display: flex;
+    gap:10px;
+}
+
+section#testimonials .slider .slide .author .pic img {
+    width:50px;
+    height: 50px;
+}
+
+section#testimonials .slider .slide .author .signature {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+section#testimonials .slider .slide .author .signature .occupation {
+    font-size: 0.875rem;
+}
+
+section#testimonials .controls {
+    display: flex;
+    gap:10px;
+    justify-content: center;
+}
+
+
+/* Pricing */
+
+section#pricing {
+    padding-top:60px;
+    padding-bottom:60px;
+}
+
+section#pricing .container {
+    display: flex;
+    flex-direction: column;
+    gap:60px;
+}
+
+section#pricing .header {
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+
+section#pricing .list {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+section#pricing .list .item {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding:20px;
+    border-radius: 10px;
+    border:1px solid #32b4bf;
+}
+
+section#pricing .list .item p {
+    letter-spacing: -0.035rem;
+    font-size: 0.875rem;
+}
+
+section#pricing .list .item p:first-of-type {
+    font-size: 1rem;
+}
+
+section#pricing .list .item p span {
+    font-size: 2.25rem;
+    vertical-align: middle;
+}
+
+section#pricing .list .item img {
+    width:24px;
+    height: 24px;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .prefooter {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .prefooter #newsletterSocial {
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    padding:80px 30px;
+    background-color: #D6F9FC;
+}
+
+footer .prefooter #newsletterSocial form {
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+
+footer .prefooter #newsletterSocial .social {
+    display: flex;
+    gap:10px;
+}
+
+footer .prefooter #links {
+    padding:80px 30px;
+    display: flex;
+    gap:60px;
+    border-top:1px solid #E7E7E7;
+    border-bottom:1px solid #E7E7E7;
+}
+
+footer .prefooter #links .list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding:0;
+}
+
+footer .prefooter #links .list li:first-of-type {
+    font-size:0.875rem;
+    color: #505050;
+    text-transform: uppercase;
+}
+
+footer .bottom {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding:80px 30px;
+}
+
+footer .bottom .upper {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+footer .bottom .upper .links {
+    display: inline-flex;
+    gap:20px;
+}
+
+
+
+/* RESPONSIVE */
+
+/* from 768px and up */
+@media screen and (min-width:768px) {
+    header {
+        padding-left:60px;
+        padding-right:60px;
+    }
+
+    section {
+        padding-left:60px;
+        padding-right:60px;
+    }
+
+    section#hero {
+        padding-top:80px;
+        padding-bottom:80px;
+    }
+
+    section#hero .text .bottom .buttons {
+        flex-wrap: initial;
+        gap:15px;
+    }
+
+    section#hero .text .bottom .buttons .button {
+        width:initial;
+    }
+    
+    section#hero .image {
+        padding:0 60px;
+        max-height:550px;
+    }
+
+    section#features .list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    section#features .list .item {
+        width:calc((100% - 120px) / 3);
+    }
+
+    section#pricing .list {
+        flex-direction: row;
+    }
+
+    section#pricing .list .item {
+        width:100%;
+    }
+
+    section#pricing .list .item p:first-of-type {
+        height:100%;
+    }
+
+    footer .prefooter #newsletterSocial,
+    footer .prefooter #links  {
+        padding-left:60px;
+        padding-right: 60px;
+    }
+
+    footer .prefooter #newsletterSocial .social img {
+        width:30px;
+        height: 30px;
+    }
+
+    footer .bottom {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+
+/* from 992px and up */
+@media screen and (min-width:992px) {
+    footer .prefooter {
+        flex-direction: row;
+    }
+    footer .prefooter #newsletterSocial,
+    footer .prefooter #links  {
+        padding-left:60px;
+        padding-right: 60px;
+        width:50%;
+    }
+    footer .prefooter #newsletterSocial {
+        order:2;
+    }
+}
+
+
+/* from 1099px and up */
+@media screen and (min-width:1099px) {
+    section {
+        display: flex;
+        justify-content: center;
+    }
+    
+    section#hero .container {
+        flex-direction: row;
+        gap:70px;
+        justify-content: center;
+    }
+
+    section#hero .text {
+        width:100%;
+    }
+
+    section#hero .image {
+        width:325px;
+        overflow: initial;
+        padding:0;
+        max-height: initial;
+    }
+
+    footer .bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer .bottom .upper {
+        gap:5px;
+    }
+}
